@@ -12,7 +12,7 @@ export const POST = async ({ request }) => {
     <html>
       <head>
         <meta property="fc:frame" content="vNext" />
-        <meta property='fc:frame:image' content='https://placehold.co/1200x630&text=test' />
+        <meta property='fc:frame:image' content='https://placehold.co/1200x630?text=test' />
         <!-- Add more meta tags as needed -->
       </head>
     </html>
