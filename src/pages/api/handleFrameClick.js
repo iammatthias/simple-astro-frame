@@ -1,4 +1,4 @@
-// This is a simplified example. Adjust as per your logic and security needs.
+// src/pages/api/handleFrameClick.js
 export async function post(request) {
   const requestData = await request.json();
   // Process requestData, verify signature, etc.
