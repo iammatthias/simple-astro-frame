@@ -1,5 +1,7 @@
 // src/pages/api/handleFrameClick.js
-export async function post(request) {
+
+// Handler for POST requests
+export const POST = async ({ request }) => {
   const requestData = await request.json();
   // Process requestData, verify signature, etc.
 
@@ -14,7 +16,13 @@ export async function post(request) {
         <!-- Add more meta tags as needed -->
       </head>
     </html>
-  `,
+    `,
     { headers: { "Content-Type": "text/html" } }
   );
-}
+};
+
+// Handler for GET requests (optional)
+export const GET = async () => {
+  // Return a simple message or handle accordingly
+  return new Response("This endpoint is for POST requests only.", { status: 200 });
+};
